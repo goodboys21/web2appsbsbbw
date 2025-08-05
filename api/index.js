@@ -25,8 +25,8 @@ class web2apk {
         appId: appID,
         appIcon: logo,
         appName: appName,
-        isPaymentInProgress: true,
-        enableShowToolBar: true,
+        isPaymentInProgress: false,
+        enableShowToolBar: false,
         toolbarColor: '#03A9F4',
         toolbarTitleColor: '#FFFFFF',
         splashIcon: logo
