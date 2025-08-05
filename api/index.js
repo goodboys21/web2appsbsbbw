@@ -99,11 +99,15 @@ app.get('/tools/web2app', async (req, res) => {
 
   const builder = new web2apk();
   try {
-    const link = await builder.build(url, email, name);
+    const result = await builder.build(url, email, name);
+    const apkLink = result?.body?.buildFile;
+    const appName = result?.body?.appName;
+
     res.json({
       status: true,
       creator: 'Bagus Bahril',
-      download_link: link
+      appName,
+      download: apkLink
     });
   } catch (err) {
     res.status(500).json({
