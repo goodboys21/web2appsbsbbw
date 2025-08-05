@@ -20,13 +20,13 @@ class web2apk {
 
   async buildConfig(url, appID, appName) {
     try {
-      const logo = 'https://logo.clearbit.com/' + url.replace(/^https?:\/\//, '');
+      const logo = 'https://cloudgood.xyz/file/l0gO3M1.png'; // Ganti URL ini dengan ikon default kamu
       const config = {
         appId: appID,
         appIcon: logo,
         appName: appName,
-        isPaymentInProgress: false,
-        enableShowToolBar: false,
+        isPaymentInProgress: true,
+        enableShowToolBar: true,
         toolbarColor: '#03A9F4',
         toolbarTitleColor: '#FFFFFF',
         splashIcon: logo
